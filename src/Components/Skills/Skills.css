@@ -1,0 +1,107 @@
+#Skills {
+  padding-top: 150px;
+  background-color: transparent;
+  z-index: 10;
+}
+
+#Skills p {
+  color: white;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.skill-heading {
+  color: white;
+  text-align: center;
+  font-size: 2em !important;
+  font-weight: 800;
+}
+
+#Skills div {
+  display: flex;
+  padding: 25px 2vw;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.view-more-btn {
+  margin: 20px auto 40px auto;
+  padding: 10px 20px;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+.view-more-btn:hover {
+  background-color: #07bb3d;
+}
+
+.skill-card-con{
+  display: flex;
+}
+
+@media (max-width:880px) {
+  .skill-circle-con{
+    height: min-content;
+    width: min-content;
+    padding: 10px;
+    margin: 0px;
+  }
+}
+
+@media (max-width:760px) {
+  #Skills{
+    padding-top: 40px;
+  }
+  .skill-heading{
+    font-size: 1.6em;
+  }
+  .skill-circle-con-con{
+    padding: 0px;
+    margin: 0px;
+    gap: 0px;
+  }
+  .skill-circle-con{
+    height: min-content;
+    width: min-content;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+ @media (max-width:520px) {
+  .skill-card-con{
+    scale: 0.9;
+    margin: 0px;
+    padding: 0px;
+  }
+  .skill-card-con div{
+    padding: 0px;
+    margin: 5px;;
+  }
+ }
+
+ @media (max-width:480px) {
+  .skill-card-con{
+    scale: 1;
+    margin: 10px;
+    padding: 10px;
+  }
+  .skill-card-con div{
+    padding: 10px;
+    margin: 20px;;
+  }
+ }
+
+ .dsa-link{
+  display: block;
+  width: 100vw;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+ }

@@ -1,0 +1,116 @@
+#Projects {
+  padding-top: 100px;
+  background-color: transparent;
+  z-index: 10;
+}
+
+#Projects p {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+#Projects button {
+  display: block;
+  margin: 5px auto;
+  padding: 16px 26px;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid rgba(169, 169, 169, 0.37);
+  font-size: 1.1em;
+  color: white;
+  font-weight: 400;
+}
+
+.all_projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.all_projects div {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.281);
+  margin: 25px 0px;
+}
+
+.all_projects div img {
+  height: 200px;
+}
+
+.all_projects div p {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+.all_projects div a {
+  font-size: 1.2em;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  opacity: 0.9;
+  display: block;
+  text-align: center;
+  transition: all 0.005s ease-in;
+}
+
+.all_projects div a:hover {
+  text-decoration: underline;
+  color: rgb(135, 163, 255);
+}
+
+
+@media (max-width:760px) {
+  #Projects{
+    padding-top: 40px;
+  }
+  #Projects p{
+    font-size: 1.6em;
+  }
+  .all_projects{
+    width: 90vw;
+    display: block;
+    margin: auto;
+  }
+
+  .all_projects div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (max-width:660px) {
+  .all_projects div p{
+    font-size: 1em;
+  }
+  .all_projects div a{
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width:430px) {
+  .all_projects div p{
+    font-size: 0.4em;
+  }
+  .all_projects div a{
+    font-size: 1em;
+  }
+}
+
+@media (max-width:360px) {
+  .all_projects div p{
+    font-size: 0.1em;
+  }
+  .all_projects div a{
+    font-size: 1em;
+  }
+}

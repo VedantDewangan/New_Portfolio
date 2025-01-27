@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.not-found-page h1 {
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+.not-found-page p {
+  font-size: 1.2rem;
+  color: #a9a9a9;
+}
+
+.not-found-page a {
+  color: #15d655;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.not-found-page a:hover {
+  text-decoration: underline;
+}
+
+.game-area {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin: 30px auto;
+  background-image: url("https://media.gettyimages.com/id/1361723239/sv/video/4k-space-travel-stars-stock-video.jpg?s=640x640&k=20&c=0uoqIpa7eb6gNK-nDaq3JBF1jG27mYoo345dwMf7a8U=");
+  background-size: cover;
+  position: relative;
+}
+
+.rotating {
+  animation: rotateBackground 6000s linear infinite;
+}
+
+@keyframes rotateBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100000% 100000%;
+  }
+}
+
+.game-area button {
+  padding: 10px 14px;
+  background-color: rgb(30, 30, 30);
+  outline: none;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  margin: 5px auto;
+  color: white;
+  border: none;
+}
+
+.asteroid{
+  border-radius: 50%;
+  background-color: gray;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+}

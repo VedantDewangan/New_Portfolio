@@ -1,0 +1,108 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+    position: fixed;
+    width: calc(100vw - 80px);
+    top: 0;
+    background-color: #00000073;
+    z-index: 1000;
+}
+
+.side-navbar{
+    display: none;
+    background-color: #000000;
+    z-index: 99999;
+    position: fixed;
+    width: calc(100vw - 40px);
+}
+
+.main-side-menu{
+    display: none;
+    background-color: black;
+    padding: 10px;
+    height: 100vh;
+    width: 40vw;
+    position: fixed;
+    top: 0px;
+    right:0px;
+    z-index: 999999999;
+    transition: all 0.6s ease-in-out;
+}
+
+.close-but-side-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.main-side-menu{
+    display: none;
+    flex-direction: column;
+}
+
+.main-side-menu ul li{
+    list-style: none;
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+    font-size: 1.3em;
+}
+
+.main-side-menu ul li a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar a img{
+    height: 40px;
+    padding: 10px 0px;
+}
+
+.navbar div a img {
+    height: 80px;
+    filter: brightness(180%);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    opacity: 0.75;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.navbar ul li a:hover{
+    color: rgb(3,177,189);
+    opacity: 1;
+}
+
+.navbar ul li a.active {
+    color: rgb(3,177,189);
+    opacity: 1;
+}
+
+@media (max-width:780px) {
+    .navbar{
+        display: none;
+    }
+    .side-navbar{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    .main-side-menu{
+        display: flex;
+    }
+}

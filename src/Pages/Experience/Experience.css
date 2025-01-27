@@ -1,0 +1,65 @@
+#Experience{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.back{
+    font-size: 1em;
+    cursor: pointer;
+    padding: 25px;
+    width: fit-content;
+}
+
+.back:hover{
+    color: lightgreen;
+}
+
+header span:last-child{
+    font-size: 2.2em;
+}
+
+.experience-card img{
+    width: 100%;
+    opacity: 0.7;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.experience-card img:hover{
+    opacity: 1;
+}
+
+.badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.badges img{
+    width: 30%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: lightgreen;
+    text-decoration: underline;
+}
+

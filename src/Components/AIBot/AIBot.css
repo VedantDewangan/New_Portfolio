@@ -1,0 +1,155 @@
+/* Main container for the chatbot */
+.ai-bot {
+  display: inline;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 6000;
+}
+
+/* Chatbot icon styling */
+.ai-bot-img {
+  height: 100px;
+  cursor: pointer;
+  animation: move 2.5s infinite linear;
+  filter: brightness(150%);
+}
+
+/* Animation for chatbot icon */
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  display: inline-flex;
+  gap: 10px;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  height: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(#222 0 0) top/100% 40% no-repeat,
+    radial-gradient(farthest-side, #000 95%, #0000) 50%/8px 8px no-repeat #fff;
+  animation: l7 1.5s infinite alternate ease-in;
+}
+.loader-con{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+@keyframes l7 {
+  0%,
+  70% {
+    background-size: 100% 40%, 8px 8px;
+  }
+  85% {
+    background-size: 100% 120%, 8px 8px;
+  }
+  100% {
+    background-size: 100% 40%, 8px 8px;
+  }
+}
+
+/* Chat area styling */
+.chat-area {
+  width: 300px;
+  padding: 15px;
+  background-color: #333;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-x: hidden; /* Removes horizontal scrolling */
+  letter-spacing: 0.5px; /* Small letter spacing */
+}
+
+/* Message box styling */
+.message-box {
+  flex: 1;
+  min-height: 250px;
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden; /* Removes horizontal scrolling */
+}
+
+.message-box::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual message styling */
+.message {
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  background-color: #444;
+  word-wrap: break-word; /* Wraps long words */
+  word-break: break-word; /* Breaks words if needed */
+}
+
+/* Input area styling */
+.input-area {
+  display: flex;
+  gap: 5px;
+}
+
+/* Text input styling */
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Send button styling */
+button {
+  padding: 8px;
+  background-color: rgb(0, 116, 116);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+/* Send button hover effect */
+button:hover {
+  background-color: rgb(0, 170, 170);
+}
+
+/* Styling for links inside messages */
+.message a {
+  color: #00aced; /* Light blue color for links */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 0.5px; /* Letter spacing for links */
+}
+
+.message a:hover {
+  color: #1da1f2;
+  text-decoration: underline;
+}
+
+.close-but {
+  display: inline;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.close-but:hover {
+  text-decoration: underline;
+}

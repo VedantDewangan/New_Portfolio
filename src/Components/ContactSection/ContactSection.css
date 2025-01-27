@@ -1,0 +1,147 @@
+#ContactMe {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.contact-heading {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 80vw;
+  gap: 10vw;
+  margin: auto;
+  color: #e1e1e1;
+}
+
+.contact-info {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.contact-subheading {
+  font-size: 1.8em;
+  color: rgb(125, 194, 194);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-text {
+  font-size: 1.3em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 1.2em;
+  color: #e1e1e1;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #2b2b2d;
+  color: #e1e1e1;
+  font-size: 1.2em;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #888;
+}
+
+.submit-button {
+  padding: 12px;
+  border: none;
+  background-color: rgb(43, 94, 94);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.submit-button:hover {
+  background-color: rgb(0, 114, 114);
+}
+
+.social-icons{
+  padding: 55px 0px 25px 0px;
+}
+
+.social-icons a{
+  font-size: 2em !important;
+}
+
+.social-icons a:hover{
+  color: rgb(0, 114, 114);
+}
+
+@media (max-width:760px) {
+  #ContactMe{
+    padding-top: 40px;
+  }
+  .contact-heading{
+    font-size: 1.6em;
+  }
+  .contact-content{
+    flex-direction: column;
+  }
+  .contact-form{
+    scale: 0.85;
+  }
+  .contact-info{
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .contact-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
